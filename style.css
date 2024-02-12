@@ -1,0 +1,47 @@
+body {
+    background-color: #ddd;
+}
+
+.tenor-gif-embed {
+    max-width: 100%; /* Asegura que los gifs se ajusten al ancho del contenedor */
+    height: auto; /* Permite que la altura se ajuste automáticamente proporcionalmente */
+    display: block; /* Asegura que el gif se muestre como un bloque */
+    margin: 20px 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Corregido "100hv" a "100vh" */
+    margin: 20px; /* Ajuste de margen para dispositivos más pequeños */
+}
+
+.button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+/* Estilos específicos para el botón "Sí" */
+.yes-button {
+    background-color: rgb(59, 59, 155);
+    color: white;
+}
+
+/* Estilos específicos para el botón "No" */
+.no-button {
+    background-color: red;
+    color: white;
+}
+
+/* Reglas de medios para dispositivos más pequeños */
+@media only screen and (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Cambia la dirección del flexbox a columna */
+        margin: 10px; /* Ajuste de margen para dispositivos más pequeños */
+    }
+}
