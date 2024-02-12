@@ -29,7 +29,7 @@ redButton.addEventListener('click', () => {
 });
 
 blueButton.addEventListener('click', () => {
-    blueButton.innerHTML = "I know it <3";
+    blueButton.innerHTML = "I knew it <3";
     redButton.remove();
     blueButton.style.fontSize = "3em";
 })
